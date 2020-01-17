@@ -1,0 +1,19 @@
+N=int(input("Banyaknya data = "))
+if N>0:
+    i=1
+    x=int(input("Data ke -"+str(i)+"="))
+    max=x;min=x;total=x
+    for i in range (2,N+1):
+        x=int(input("Data ke -"+str(i)+"="))
+        total+=x
+        if max<x:
+            max=x
+        elif min>x:
+            min=x
+    distance=max-min
+    rata2=total/x
+    print("Bilangan Terbesarnya =",max)
+    print("Bilangan Terkecilnya =",min)
+    print("Range = ",distance)
+    print("Total = ",total)
+    print("Rata-rata = ",rata2)
